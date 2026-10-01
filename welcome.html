@@ -3,26 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Worship SPL: Log the Volume of Every Church Service</title>
-<meta name="description" content="iPhone app for church sound teams. Calibrate once with a sound level meter, then log every service and share a one-page report with your team. Free to download.">
+<title>Worship SPL: A Weekly Church Sound Level Log for iPhone</title>
+<meta name="description" content="An iPhone app that logs your church sound level every service. Calibrate once with a sound level meter, then share a one-page report with your sound team. Free to download.">
 <link rel="canonical" href="https://fututukamono.github.io/worship-spl-support/welcome.html">
-<meta property="og:title" content="Worship SPL: Log the Volume of Every Church Service">
+<meta property="og:title" content="Worship SPL: A Weekly Church Sound Level Log for iPhone">
 <meta property="og:description" content="Calibrate once with a sound level meter, then log every service and share it with your sound team.">
 <meta property="og:image" content="https://fututukamono.github.io/worship-spl-support/img/03_service.jpg">
 <meta property="og:type" content="website">
 <meta name="apple-itunes-app" content="app-id=6815865409">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Worship SPL","operatingSystem":"iOS 17.0 or later","applicationCategory":"MusicApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"downloadUrl":"https://apps.apple.com/app/worship-spl/id6815865409","author":{"@type":"Person","name":"Daisuke Kawaue"}}</script>
+<link rel="icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Worship SPL","operatingSystem":"iOS 17.0 or later","applicationCategory":"UtilitiesApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"downloadUrl":"https://apps.apple.com/us/app/worship-spl/id6815865409","url":"https://fututukamono.github.io/worship-spl-support/welcome.html","author":{"@type":"Person","name":"Daisuke Kawaue"}}</script>
 <style>
-:root{--bg:#fff;--panel:#f4f6f8;--line:#e2e6ea;--fg:#15181c;--sub:#5f6b76;--accent:#0a6e8a}
+:root{color-scheme:light;--bg:#fffaf2;--panel:#fdf0dc;--line:#ecd9bd;--fg:#2b1a10;--sub:#6e5543;--accent:#b0530a;--amber:#f59a23;--brown:#3a1d0d}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
-.wrap{max-width:720px;margin:0 auto;padding:0 20px 72px}
+.wrap{max-width:720px;margin:0 auto;padding:6px 20px 72px}
 a{color:var(--accent)}
-.eyebrow{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding-top:34px}
+.hero{background:radial-gradient(120% 60% at 50% 100%,#e08a2c 0%,rgba(224,138,44,0) 60%),linear-gradient(180deg,#2e160a 0%,#5c2d10 62%,#8a4614 100%);color:#fff4e2;padding:0 20px 40px}
+.hero .in{max-width:720px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:14px;padding-top:28px}
+.brand img{width:64px;height:64px;border-radius:15px;box-shadow:0 2px 12px rgba(0,0,0,.45)}
+.brand b{font-size:19px;letter-spacing:.01em;color:#fff4e2}
+.brand span{display:block;color:#e9c79b;font-size:13px;margin-top:1px}
+.hero h1{color:#fff7ea}
+.hero .sub{color:#f1d9b8}
+.hero .badge{margin-top:20px}
+.phones{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin:30px -20px 0;padding:6px 20px 12px;justify-content:center}
+.phones figure{flex:0 0 auto;width:min(31%,200px);scroll-snap-align:center;margin:0}
+.phones img{width:100%;height:auto;display:block;border-radius:22px;border:6px solid #1a0d05;background:#fff;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.phones figcaption{font-size:13px;color:#f6dcb8;margin-top:10px;text-align:center}
+@media(max-width:560px){.phones{justify-content:flex-start}.phones figure{width:62%}}
 h1{font-size:32px;line-height:1.25;font-weight:800;margin-top:10px}
 .sub{font-size:18px;color:var(--sub);margin-top:14px}
-.badge{display:inline-block;margin-top:24px;padding:12px 0}
+.badge{display:inline-block;margin-top:22px;padding:12px 0}
 .badge img{height:54px;width:auto;display:block}
 .note{font-size:14.5px;color:var(--sub);margin-top:4px}
 .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:30px}
@@ -32,33 +47,32 @@ h1{font-size:32px;line-height:1.25;font-weight:800;margin-top:10px}
 .small{font-size:13px;color:var(--sub);margin-top:8px}
 h2{font-size:21px;font-weight:700;margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
 h3{font-size:16px;font-weight:700;margin-top:22px}
-p{margin-top:10px;color:#2b3239}
-ul{margin-top:12px;padding-left:1.2em;display:grid;gap:8px;color:#2b3239}
+p{margin-top:10px;color:#3d2a1c}
+ul{margin-top:12px;padding-left:1.2em;display:grid;gap:8px;color:#3d2a1c}
 li::marker{color:var(--accent)}
 .box{margin-top:16px;padding:18px 20px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
 .box p{margin-top:0}
 .box p+p{margin-top:10px}
 footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--sub);font-size:13.5px}
 footer a{margin-right:14px}
-@media(prefers-color-scheme:dark){:root{--bg:#111416;--panel:#1b2024;--line:#2c3338;--fg:#eef1f3;--sub:#9aa6b0;--accent:#5cc3e0}p,ul{color:#d4dade}}
 @media(max-width:520px){h1{font-size:27px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<div class="eyebrow">Worship SPL for iPhone</div>
+<header class="hero"><div class="in">
+<div class="brand"><img src="img/icon.png" alt="Worship SPL app icon" width="64" height="64"><div><b>Worship SPL</b><span>for iPhone</span></div></div>
 <h1>Calibrate once. Log every service.</h1>
 <p class="sub">Worship SPL keeps a weekly record of how loud your services are, measured the same way each time, and shares it with your church's sound team.</p>
-<a class="badge" href="https://apps.apple.com/app/worship-spl/id6815865409"><img src="img/app-store-badge.svg" alt="Download on the App Store"></a>
+<a class="badge" href="https://apps.apple.com/us/app/worship-spl/id6815865409?pt=129178382&amp;ct=site_welcome&amp;mt=8"><img src="img/app-store-badge.svg" alt="Download on the App Store"></a>
+<div class="phones">
+<figure><img src="img/01_home.jpg" alt="Worship SPL home screen" width="331" height="720"><figcaption>Live level and the 15-minute average</figcaption></figure>
+<figure><img src="img/02_stage.jpg" alt="Stage Volume Check results by frequency band" width="331" height="720"><figcaption>Stage Volume Check: mains off and on</figcaption></figure>
+<figure><img src="img/03_service.jpg" alt="Service Monitor screen" width="331" height="720"><figcaption>Service Monitor</figcaption></figure>
+</div>
+</div></header>
+<div class="wrap">
 <p class="note">Free to download for iPhone (iOS 17 or later). Logging, reports, team sharing, Stage Volume Check and Position Correction need a subscription: $4.99 per month or $39.99 per year, with a 14-day free trial for new subscribers.</p>
 <p class="note">No audio is recorded. Sound is analyzed on your iPhone and is not saved or sent anywhere.</p>
-
-<div class="shots">
-<figure><img src="img/01_home.jpg" alt="Worship SPL home screen" width="360" height="782"><figcaption>Live level and the 15-minute average</figcaption></figure>
-<figure><img src="img/02_stage.jpg" alt="Stage Volume Check results by frequency band" width="360" height="782"><figcaption>Stage Volume Check: mains off and on</figcaption></figure>
-<figure><img src="img/03_service.jpg" alt="Service Monitor screen" width="360" height="782"><figcaption>Service Monitor</figcaption></figure>
-<figure><img src="img/04_correction.jpg" alt="Position Correction step" width="360" height="782"><figcaption>Position Correction for a mixer that isn't in the middle of the room</figcaption></figure>
-</div>
 <p class="small">Screens show sample data.</p>
 
 <h2>Why a weekly record helps</h2>
@@ -89,6 +103,7 @@ footer a{margin-right:14px}
 
 <h2>Position Correction</h2>
 <p>If your mixer isn't in the middle of the room, measure a correction once with pink noise, one step per screen. After that, the iPhone at the mixer estimates the level at the center of the seating area.</p>
+<p><img src="img/04_correction.jpg" alt="Position Correction step" width="331" height="720" style="width:min(220px,60%);height:auto;border-radius:18px;border:5px solid var(--brown);box-shadow:0 8px 20px rgba(58,29,13,.25)"></p>
 
 <h2>Price</h2>
 <div class="box">
