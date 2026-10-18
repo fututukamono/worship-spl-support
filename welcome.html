@@ -3,17 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Worship SPL: A Weekly Church Sound Level Log for iPhone</title>
-<meta name="description" content="An iPhone app that logs your church sound level every service. Calibrate once with a sound level meter, then share a one-page report with your sound team. Free to download.">
+<title>Church Volume Tracker &amp; PDF Reports | Worship SPL</title>
+<meta name="description" content="Keep an iPhone at the mixer to track worship sound levels and share a one-page PDF report with your pastor. Free download; reports require a subscription.">
 <link rel="canonical" href="https://fututukamono.github.io/worship-spl-support/welcome.html">
-<meta property="og:title" content="Worship SPL: A Weekly Church Sound Level Log for iPhone">
-<meta property="og:description" content="Calibrate once with a sound level meter, then log every service and share it with your sound team.">
-<meta property="og:image" content="https://fututukamono.github.io/worship-spl-support/img/03_service.jpg">
+<meta property="og:title" content="Track worship volume. Share a PDF report. | Worship SPL: Church Volume">
+<meta property="og:description" content="Keep your iPhone at the mixer, log each service, and share a one-page sound level report with your pastor and team.">
+<meta property="og:image" content="https://fututukamono.github.io/worship-spl-support/img/og_1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
 <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="apple-itunes-app" content="app-id=6815865409">
 <link rel="icon" href="img/apple-touch-icon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Worship SPL", "operatingSystem": "iOS 17.0 or later", "applicationCategory": "UtilitiesApplication", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "downloadUrl": "https://apps.apple.com/us/app/worship-spl/id6815865409", "url": "https://fututukamono.github.io/worship-spl-support/welcome.html", "author": {"@type": "Person", "name": "Daisuke Kawaue"}, "softwareVersion": "1.1"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Worship SPL: Church Volume", "alternateName": "Worship SPL", "description": "An iPhone app for church sound volunteers. It tracks worship service sound levels, logs each service, and creates a one-page PDF report for the pastor and sound team. Levels are estimates. No audio is recorded or saved.", "operatingSystem": "iOS 17 or later", "applicationCategory": "UtilitiesApplication", "url": "https://fututukamono.github.io/worship-spl-support/welcome.html", "downloadUrl": "https://apps.apple.com/us/app/worship-spl/id6815865409", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Daisuke Kawaue"}, "softwareVersion": "1.4"}</script>
 <style>
 :root{color-scheme:light;--bg:#fffaf2;--panel:#fdf0dc;--line:#ecd9bd;--fg:#2b1a10;--sub:#6e5543;--accent:#b0530a;--amber:#f59a23;--brown:#3a1d0d}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -56,93 +59,88 @@ li::marker{color:var(--accent)}
 footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--sub);font-size:13.5px}
 footer a{margin-right:14px}
 @media(max-width:520px){h1{font-size:27px}}
+.trust{font-size:14px;color:#f1d9b8;margin-top:6px}
+.steps{counter-reset:st;list-style:none;padding-left:0}
+.steps li{counter-increment:st;padding-left:2.2em;position:relative}
+.steps li::before{content:counter(st);position:absolute;left:0;top:.1em;width:1.6em;height:1.6em;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.cta{text-align:center;margin-top:40px}
 </style>
 </head>
 <body>
 <header class="hero"><div class="in">
-<div class="brand"><img src="img/icon.png" alt="Worship SPL app icon" width="64" height="64"><div><b>Worship SPL</b><span>for iPhone</span></div></div>
-<h1>Calibrate once. Log every service.</h1>
-<p class="sub">Worship SPL keeps a weekly record of how loud your services are, measured the same way each time, and shares it with your church's sound team.</p>
+<div class="brand"><img src="img/icon.png" alt="Worship SPL: Church Volume app icon" width="64" height="64"><div><b>Worship SPL: Church Volume</b><span>for iPhone</span></div></div>
+<h1>Track worship volume. Share a PDF report.</h1>
+<p class="sub">Keep your iPhone at the mixer, log each service, and share a one-page sound level report with your pastor and team.</p>
 <a class="badge" href="https://apps.apple.com/us/app/worship-spl/id6815865409?pt=129178382&amp;ct=site_welcome&amp;mt=8"><img src="img/app-store-badge.svg" alt="Download on the App Store"></a>
+<p class="trust">Free download. Free live level and 15-minute average. Service logs and PDF reports require a subscription with a 14-day free trial.</p>
 <div class="phones">
-<figure><img src="img/01_home.jpg" alt="Worship SPL home screen" width="331" height="720"><figcaption>Live level and the 15-minute average</figcaption></figure>
-<figure><img src="img/02_stage.jpg" alt="Stage Volume Check results by frequency band" width="331" height="720"><figcaption>Stage Volume Check: mains off and on</figcaption></figure>
-<figure><img src="img/03_service.jpg" alt="Service Monitor screen" width="331" height="720"><figcaption>Service Monitor</figcaption></figure>
+<figure><img src="img/v14_01_service.jpg" alt="Service Monitor screen with the 15-minute average and the church's limit" width="662" height="1438"><figcaption>Service Monitor</figcaption></figure>
+<figure><img src="img/v14_02_report.jpg" alt="One-page service report screen" width="662" height="1438"><figcaption>One-page report</figcaption></figure>
+<figure><img src="img/v14_04_home.jpg" alt="Home screen with the live level and the 15-minute average" width="662" height="1438"><figcaption>Live level, free</figcaption></figure>
 </div>
 </div></header>
 <div class="wrap">
-<p class="note">Free to download for iPhone (iOS 17 or later). Logging, reports, team sharing, Stage Volume Check and Position Correction need a subscription: $4.99 per month or $39.99 per year, with a 14-day free trial for new subscribers.</p>
-<p class="note">No audio is recorded. Sound is analyzed on your iPhone and is not saved or sent anywhere.</p>
-<p class="small">Screens show sample data. <a href="#sample">See a fictional sample service report</a>.</p>
+<p class="note"><strong>Worship SPL: Church Volume</strong> is an iPhone app for church sound volunteers. It tracks worship service sound levels, logs each service, and creates a one-page PDF report for the pastor and sound team. It needs iOS 17 or later. No audio is recorded or saved.</p>
+<p class="small">Screens show sample data.</p>
 
 <section id="sample">
-<h2>See a sample service report</h2>
-<p>This is a sample of the one-page PDF report Worship SPL creates for a service. The church, the date and every number are <strong>fictional</strong>. It is not a real church&rsquo;s report. It was recreated from the layout and calculations the app uses, with made-up levels. It is not a file exported from the app.</p>
+<h2>See the one-page report you can share</h2>
+<p>This is a sample of the one-page PDF report Worship SPL creates for a service. The church, the date and every number are <strong>fictional</strong>. It is not a real church&rsquo;s report. It was recreated from the layout and calculations the app uses, with made-up levels. It is not a file exported from the app. This sample is a calibrated report, so it shows dB(A).</p>
 <figure style="margin:16px 0 0;max-width:34rem"><a href="assets/sample-service-sound-report-fictional.pdf"><img src="img/sample-service-report-fictional.jpg" width="935" height="900" loading="lazy" alt="Fictional Service Sound Level Report for Example Church: length, highest 15-minute average, limit, time over the limit, and a bar for each minute of the service" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block"></a><figcaption class="small">Fictional sample, one page. <a href="assets/sample-service-sound-report-fictional.pdf">Open the sample PDF</a> to read it at full size.</figcaption></figure>
-<div class="box">
-<p><strong>How to read the numbers.</strong></p>
-<ul>
-<li>dB(A) values appear after you calibrate the iPhone once against a sound level meter. This sample is a calibrated report. Without calibration, the report shows relative levels from the iPhone&rsquo;s built-in microphone, with no dB(A) unit and no comparison with your limit.</li>
-<li>Levels are estimates from an iPhone microphone. They are not a certified measurement, and they do not tell you whether a service meets any rule or standard.</li>
-<li>A line on the report says where the level was taken: at the iPhone, or, if you set up Position Correction, an estimate at the center of the seating area.</li>
-<li>&ldquo;Time over the limit&rdquo; counts the minutes when the 15-minute average was above the limit your church chose.</li>
-<li>No audio is saved.</li>
-</ul>
-</div>
 </section>
 
-<h2>Why a weekly record helps</h2>
-<p>When someone says the service was too loud, a team usually has a feeling and nothing written down. Worship SPL measures the same way from the same iPhone every week, so the conversation can start from what was measured.</p>
-<p>A phone is not a measurement microphone. That is why Worship SPL asks you to calibrate it once against a real sound level meter. After that, the iPhone at the mixer gives you a consistent weekly log.</p>
+<h2>How it works</h2>
+<ol class="steps">
+<li>Put an iPhone at the mixer before the service.</li>
+<li>Start logging. It saves one level per minute, the highest 15-minute average, and the time over your church&rsquo;s limit.</li>
+<li>After the service, share the one-page PDF with your pastor and sound team.</li>
+</ol>
 
-<h2>What you need</h2>
-<ul>
-<li>An iPhone with iOS 17 or later.</li>
-<li>A sound level meter, once, to calibrate. Without calibration, levels are relative and are not compared with your limit.</li>
-<li>For Position Correction: a second device to play pink noise through the mains.</li>
-<li>For Stage Volume Check: a tripod for the iPhone at the center of the seating area, and the band playing the same part for about three minutes.</li>
-</ul>
-
-<h2>Service Monitor</h2>
-<ul>
-<li>Keep the iPhone at the mixer during the service.</li>
-<li>After a one-time Position Correction (or if your mixer is near the middle of the room), it estimates the 15-minute average at the center of the seating area.</li>
-<li>Once calibrated, it compares that average with the limit your church chooses.</li>
-<li>It logs each service: one level per minute, the highest 15-minute average and the time over your limit, and shares a one-page PDF report.</li>
-</ul>
-
-<h2>Share it with your sound team</h2>
-<p>Invite your team through iCloud. Everyone sees the same limit, position correction, checks and service logs. Invited members join at no charge with their own Apple Account.</p>
-
-<h2>Stage Volume Check</h2>
-<p>During rehearsal, mute only the mains at the times the app shows. The iPhone at the center of the seating area compares mains off and on in 1/3-octave bands from 63 Hz to 16 kHz, three times. You see where the mains add a lot, and where they add little because the stage is already loud. After three saved checks on the same iPhone, bands that differ from your usual are marked.</p>
-
-<h2>Position Correction</h2>
-<p>If your mixer isn't in the middle of the room, measure a correction once with pink noise, one step per screen. After that, the iPhone at the mixer estimates the level at the center of the seating area.</p>
-<p><img src="img/04_correction.jpg" alt="Position Correction step" width="331" height="720" style="width:min(220px,60%);height:auto;border-radius:18px;border:5px solid var(--brown);box-shadow:0 8px 20px rgba(58,29,13,.25)"></p>
-
-<h2>Price</h2>
+<h2>What the numbers mean</h2>
 <div class="box">
-<p><strong>Free:</strong> live levels and the 15-minute average.</p>
-<p><strong>Subscription:</strong> service logs and reports, inviting your team, Stage Volume Check and Position Correction. $4.99 per month, or $39.99 per year (about a third less than paying monthly). New subscribers get a 14-day free trial. Cancel any time in Settings &gt; Apple Account &gt; Subscriptions.</p>
+<ul>
+<li>Levels are estimates from an iPhone microphone. They are not a certified measurement, and they do not tell you whether a service meets any rule or standard.</li>
+<li>Calibrate once against a sound level meter to see dB(A). Without calibration, levels are relative and are not compared with your limit.</li>
+<li>The report says where the level was taken: at the iPhone, or, with Position Correction, an estimate at the center of the seating area.</li>
+<li>&ldquo;Time over the limit&rdquo; counts the minutes when the 15-minute average was above the limit your church chose. The app does not set a limit for you.</li>
+<li>No audio is recorded, saved or sent anywhere.</li>
+</ul>
+</div>
+
+<h2>Free and subscription</h2>
+<div class="box">
+<p><strong>Free:</strong> live level and the 15-minute average.</p>
+<p><strong>Subscription:</strong> service logs and PDF reports, inviting your team, Stage Volume Check and Position Correction. $4.99 per month, or $39.99 per year. New subscribers get a 14-day free trial. Cancel any time in Settings &gt; Apple Account &gt; Subscriptions.</p>
 <p>If you have an offer code, open the Subscription screen in the app and use &ldquo;Redeem Code&rdquo;.</p>
 </div>
 
-<h2>What&rsquo;s new</h2>
-<h3>Version 1.1</h3>
-<ul>
-<li>You can now use an offer code from the Subscription screen with &ldquo;Redeem Code&rdquo;.</li>
-<li>The Subscription screen now describes more clearly what is free and what is part of the subscription.</li>
-<li>The free trial line is easier to read.</li>
-</ul>
+<h2>More tools for your sound team</h2>
+<h3>Share with your team</h3>
+<p>Invite your team through iCloud. Everyone sees the same limit, position correction, checks and service logs. Invited members join at no charge with their own Apple Account.</p>
+<h3>Stage Volume Check</h3>
+<p>During rehearsal, mute only the mains at the times the app shows. The iPhone at the center of the seating area compares mains off and on in 1/3-octave bands, three times, so you see how much of the sound at the seats comes from the stage. You need a tripod and the band playing the same part for about three minutes.</p>
+<p><img src="img/v14_03_stage.jpg" alt="Stage Volume Check results by frequency band" width="662" height="1438" loading="lazy" style="width:min(220px,60%);height:auto;border-radius:18px;border:5px solid var(--brown);box-shadow:0 8px 20px rgba(58,29,13,.25)"></p>
+<h3>Position Correction</h3>
+<p>If your mixer isn&rsquo;t in the middle of the room, measure a correction once with pink noise played through the mains from a second device. After that, the iPhone at the mixer estimates the level at the center of the seating area.</p>
 
-<h2>Questions</h2>
+<h2>Common questions</h2>
+<h3>What iPhone app can track church worship volume?</h3>
+<p>Worship SPL: Church Volume tracks sound levels during church services. Keep an iPhone at the mixer to log one level per minute, the highest 15-minute average, and time over your church&rsquo;s chosen limit. It creates a one-page PDF report to share with your pastor and sound team.</p>
+<h3>Is Worship SPL a certified decibel meter?</h3>
+<p>No. It shows estimated sound levels. Without calibrating the iPhone once against a sound level meter, the readings are relative. It is not a certified sound level meter.</p>
+<h3>Does it record the worship service?</h3>
+<p>No. Audio is analyzed on your iPhone as it comes in. It is not recorded, saved or sent anywhere.</p>
 <h3>Why a 15-minute average?</h3>
 <p>A set is judged by how loud it stays, not by a single loud hit. Life.Church, for example, describes its target as an average over 18 minutes of worship. See <a href="church-sound-levels.html">how loud church worship should be</a> for the numbers other teams publish.</p>
-<h3>Does it record the service?</h3>
-<p>No. Audio is analyzed on your iPhone as it comes in. It is not recorded, saved or sent anywhere.</p>
 <h3>Where are the records kept?</h3>
 <p>On your iPhone. If you invite your team, they are stored in your iCloud account and shared with the people you invite. We cannot see them.</p>
+<h3>What changed in the latest version?</h3>
+<p>See <a href="support.html#whats-new">What&rsquo;s new</a> on the support page.</p>
+
+<div class="cta">
+<p><strong>Worship SPL: Church Volume</strong> for iPhone, iOS 17 or later. Free download.</p>
+<a class="badge" href="https://apps.apple.com/us/app/worship-spl/id6815865409?pt=129178382&amp;ct=site_welcome_bottom&amp;mt=8"><img src="img/app-store-badge.svg" alt="Download on the App Store"></a>
+</div>
 
 <footer>
 <a href="index.html">Privacy Policy</a><a href="support.html">Support</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a><a href="mailto:contact@da-win.net">contact@da-win.net</a>
